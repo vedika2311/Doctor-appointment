@@ -116,6 +116,19 @@ h6 {
   left: -15%;
   background: rgba(198, 16, 0, 0);
 }
+button{
+  background-color: #1977cc;
+  color:#fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  
+}
+.det{
+  padding-bottom: 30px;
+  font-size: 18px;
+}
 
 .pulsating-play-btn:after {
   content: "";
