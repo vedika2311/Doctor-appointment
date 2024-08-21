@@ -4,13 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Medilab Bootstrap Template</title>
+  <title>Appointments</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -28,14 +24,17 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Medilab
-  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
+<?php
+
+$con = mysqli_connect("localhost","root","","doc_apo");
+
+if(!$con){
+    die("Connection Errror");
+}
+$query = "select * from users";
+$result = mysqli_query($con,$query);
+?>
 
 <body class="starter-page-page">
 
@@ -62,7 +61,7 @@
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Medilab</h1>
+          <h1 class="sitename">TakeYourCare</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -106,17 +105,7 @@
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Starter Page</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="breadcrumbs">
+       <nav class="breadcrumbs">
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -126,108 +115,39 @@
       </nav>
     </div><!-- End Page Title -->
 
-     <!-- About Section -->
-     <section id="about" class="about section">
-
-      <div class="container">
-
-        <div class="row gy-4 gx-5">
-
-          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\img 1.jpg" style="width:500px">
-          
-          </div>
-
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <h3>Eye Care</h3>
-            <p>
-              If you have diabetes or high blood pressure, ask your doctor how often you need an eye exam. 
-              Most people with diabetes or high blood pressure need a dilated eye exam every year.
-             Although older adults tend to have more vision problems, preschoolers may not see as well as they can. 
-             The US Preventive Services Task Force recommends that children have at least one eye exam between age 
-             3 and 5 years. 
-            </p>
-            
-      </div>
-
-    </section><!-- /About Section -->
-
     <!-- Starter Section Section -->
-    <section id="doctors" class="doctors section">
+    <section id="starter-section" class="starter-section section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Doctors</h2>
-        </div><!-- End Section Title -->
+        <h2>Your Appointments</h2>
+      </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up">
+        <table>
+          <tr>
+            <td>Apt. No.</td>
+            <td>Apt. Date</td>
+            <td>Apt. Time</td>
+            <td>Status</td>
+            
+          </tr>
+          <tr>
+            <?php
 
-        <div class="row gy-4">
+            while($row = mysqli_fetch_assoc($result)){
+              ?>
+              <td><?php echo $row['apt_no']?></td>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\doctors\doctors-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Medical Officer</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <button>Read More</button>
-                <button >Book Appointment</button>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Anesthesiologist</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <button>Read More</button>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\BA_RajeshPatil.html">
-                <button>Book Appointment</button>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Cardiology</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <button>Read More</button>
-                <button>Book Appointment</button>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Neurosurgeon</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <button>Read More</button>
-                <button>Book Appointment</button>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
+            </tr>
+            <?php
+            }
+            ?>
+          </tr>
+        </table>
       </div>
 
-    </section><!-- /Doctors Section -->
-
+    </section><!-- /Starter Section Section -->
 
   </main>
 
@@ -237,7 +157,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Medilab</span>
+            <span class="sitename">TakeYourCare</span>
           </a>
           <div class="footer-contact pt-3">
             <p>A108 Adam Street</p>
@@ -301,7 +221,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">TakeYourCare</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
