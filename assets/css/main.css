@@ -116,6 +116,205 @@ h6 {
   left: -15%;
   background: rgba(198, 16, 0, 0);
 }
+button{
+  background-color: #1977cc;
+  color:#fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  
+}
+
+
+
+
+/* Style for the time slots */
+        .timeslot {
+            padding: 20px;
+            margin: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        /* Style the buttons inside the time slots */
+        .timeslot button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .timeslot button:hover {
+            background-color: #45a049;
+        }
+
+        /* Style the popup/modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #aaa;
+            float: left;
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 420px;
+            
+          
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .modal-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .modal-buttons button {
+            width: 45%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .modal-buttons .ok-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .modal-buttons .cancel-btn {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .modal-buttons .ok-btn:hover {
+            background-color: #45a049;
+        }
+
+        .modal-buttons .cancel-btn:hover {
+            background-color: #e53935;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.styled {
+ border: 0;
+ line-height: 2.5;
+ padding: 0 20px;
+ font-size: 1rem;
+ text-align: center;
+ color: #fff;
+ text-shadow: 1px 1px 1px #000;
+ border-radius: 10px;
+ background-color: #1977cc;
+ background-image: linear-gradient(
+   to top left,
+   rgb(0 0 0 / 20%),
+   rgb(0 0 0 / 20%) 30%,
+   rgb(0 0 0 / 0%)
+ );
+ box-shadow:
+   inset 2px 2px 3px rgb(255 255 255 / 60%),
+   inset -2px -2px 3px rgb(0 0 0 / 60%);
+}
+
+
+
+.styled:active {
+ box-shadow:
+   inset -2px -2px 3px rgb(255 255 255 / 60%),
+   inset 2px 2px 3px rgb(0 0 0 / 60%);
+}
+.color-box {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 10px;
+}
+.color-box.blue {
+  background-color: blue;
+  
+}
+.color-box.green {
+  background-color: green;
+}
+
+.det{
+  padding-bottom: 30px;
+  font-size: 18px;
+}
 
 .pulsating-play-btn:after {
   content: "";
