@@ -4,13 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Medilab Bootstrap Template</title>
+  <title>Appointments</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -28,14 +24,17 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Medilab
-  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
+<?php
+
+$con = mysqli_connect("localhost","root","","doc_apo");
+
+if(!$con){
+    die("Connection Errror");
+}
+$query = "select * from users";
+$result = mysqli_query($con,$query);
+?>
 
 <body class="starter-page-page">
 
@@ -72,7 +71,23 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#departments">Departments</a></li>
             <li><a href="#doctors">Doctors</a></li>
-            
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -90,8 +105,7 @@
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
-      
-      <nav class="breadcrumbs">
+       <nav class="breadcrumbs">
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -101,124 +115,39 @@
       </nav>
     </div><!-- End Page Title -->
 
-     <!-- About Section -->
-     <section id="about" class="about section">
-
-      <div class="container">
-
-        <div class="row gy-4 gx-5">
-
-          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\img 4.jpg" style="width:500px">
-          
-          </div>
-
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <h3>Eye Care</h3>
-            <p>
-              If you have diabetes or high blood pressure, ask your doctor how often you need an eye exam. 
-              Most people with diabetes or high blood pressure need a dilated eye exam every year.
-             Although older adults tend to have more vision problems, preschoolers may not see as well as they can. 
-             The US Preventive Services Task Force recommends that children have at least one eye exam between age 
-             3 and 5 years. 
-            </p>
-            
-      </div>
-
-    </section><!-- /About Section -->
-
     <!-- Starter Section Section -->
-    <section id="doctors" class="doctors section">
+    <section id="starter-section" class="starter-section section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Doctors</h2>
-        </div><!-- End Section Title -->
+        <h2>Your Appointments</h2>
+      </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up">
+        <table>
+          <tr>
+            <td>Apt. No.</td>
+            <td>Apt. Date</td>
+            <td>Apt. Time</td>
+            <td>Status</td>
+            
+          </tr>
+          <tr>
+            <?php
 
-        <div class="row gy-4">
+            while($row = mysqli_fetch_assoc($result)){
+              ?>
+              <td><?php echo $row['apt_no']?></td>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\doctors\doctors-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Rajesh Patil</h4>
-                <span>Chief Medical Officer</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\rajesh-patil.html">
-                    <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-   
-                <button >Book Appointment</button>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Priti Wagh</h4>
-                <span>Anesthesiologist</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\priti-wagh.html">
-                <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-               <button>Book Appointment</button>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\doctors\doctors-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sushil Tiwari</h4>
-                <span>Cardiology</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\sushil-tiwari.html">
-                <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-   
-                <button>Book Appointment</button>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Hp\Desktop\Doctor-appointment\assets\img\doctors\doctors-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sushmita More</h4>
-                <span>Neurosurgeon</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\sushmita-more.html">
-                <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-                <button>Book Appointment</button>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
+            </tr>
+            <?php
+            }
+            ?>
+          </tr>
+        </table>
       </div>
 
-    </section><!-- /Doctors Section -->
-
+    </section><!-- /Starter Section Section -->
 
   </main>
 
@@ -232,7 +161,7 @@
           </a>
           <div class="footer-contact pt-3">
             <p>A108 Adam Street</p>
-            <p>Jalgaon, NY 535022</p>
+            <p>New York, NY 535022</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
             <p><strong>Email:</strong> <span>info@example.com</span></p>
           </div>
