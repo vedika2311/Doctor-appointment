@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Medilab Bootstrap Template</title>
+  <title>Doctor Details</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -28,14 +28,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Medilab
-  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+  </head>
 
 <body class="starter-page-page">
 
@@ -62,14 +55,13 @@
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">TakeYourCare</h1>
+          <h1 class="sitename">Medilab</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero">Home<br></a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#departments">Departments</a></li>
             <li><a href="#doctors">Doctors</a></li>
             
@@ -77,9 +69,6 @@
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
-
       </div>
 
     </div>
@@ -95,136 +84,115 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li class="current">Find Doctor</li>
+            <li class="current">Dr. Sushmita More</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-     <!-- About Section -->
-     <section id="about" class="about section">
-
+    <!-- Starter Section Section -->
+    <section id="about" class="about section">  
       <div class="container">
 
         <div class="row gy-4 gx-5">
 
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\img 5.jpg" style="width:500px">
-          
-          </div>
+            <img src="assets\img\doctors\doctors-4.jpg" style="width: 500px;">
+         </div>
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <h3>Dentists</h3>
-            <p>
-              A dentist, also known as a dental surgeon, is a health care professional who 
-              specializes in dentistry, the branch of medicine focused on the teeth, gums, and mouth. 
-              The dentist's supporting team aids in providing oral health services. The dental team 
-              includes dental assistants, dental hygienists, dental technicians, and sometimes dental therapists. 
-            </p>
-            
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Starter Section Section -->
-    <section id="doctors" class="doctors section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Our Doctors</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\doctors\doctors-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Rajesh Patil</h4>
-                <span>Chief Medical Officer</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\rajesh-patil.html">
-                <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-                 <button>Book Appointment</button>
-                </a>
-              </div>
+            <style>
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 20px 0;
+                }
+                td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+            </style>
+            <div class="det">
+              <h4>Doctor Sushmita More</h4>
+              Designation: Homeopathy Physician and surgen
             </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Priti Wagh</h4>
-                <span>Anesthesiologist</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\priti-wagh.html">
-                <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-
+            <div class="det">
+              <b>Department:</b>  Homeopathy  
+              <b style="padding-left: 155px;">Gender:</b>   Male
+            </div>
+            <div class="det">
+              <b>Qualification:</b>   MBBS,MBSC
+              <b style="padding-left: 130px;">Experience:</b> 5+ years in surgon
+            </div>
+            <div class="det">
+              <b>Specialization:</b>   Homeopathy
+            </div>
+            <div class="det">
+              <b>Consulation fees:</b>   950
+            </div>
+            <div class="det" >
+              <b>Timings:</b>
+              <table>
+                <tbody>
+                    <tr>
+                        <td>MONDAY - (SHIFT-1)</td>
+                        <td>10:00 AM TO 01:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>MONDAY - (SHIFT-2)</td>
+                      <td>03:00 PM TO 06:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>TUESDAY - (SHIFT-1)</td>
+                      <td>10:00 AM TO 01:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>TUESDAY - (SHIFT-2)</td>
+                      <td>04:00 PM TO 09:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>WEDNESDAY - (SHIFT-1)</td>
+                      <td>10:00 AM TO 01:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>WEDNESDAY - (SHIFT-2)</td>
+                      <td>04:00 PM TO 10:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>THURSDAY - (SHIFT-1)</td>
+                      <td>09:00 AM TO 12:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>THURSDAY - (SHIFT-2)</td>
+                      <td>03:00 PM TO 07:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>FRIDAY - (SHIFT-1)</td>
+                      <td>11:00 AM TO 02:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>FRIDAY - (SHIFT-2)</td>
+                      <td>05:00 PM TO 09:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>SATURDAY - (SHIFT-1)</td>
+                      <td>10:00 AM TO 01:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
  
-                <button>Book Appointment</button>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\doctors\doctors-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sushil Tiwari</h4>
-                <span>Cardiology</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\sushil-tiwari.html">
-                
-                <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-
- 
-                <button>Book Appointment</button>
-                </a>
-  
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Hp\Desktop\Doctor-appointment\assets\img\doctors\doctors-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sushmita More</h4>
-                <span>Neurosurgeon</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\sushmita-more.html">
-                <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-
- 
-                <button>Book Appointment</button>
-                </a>
-  
-              </div>
-            </div>
-          </div><!-- End Team Member -->
+          </div>
 
         </div>
 
       </div>
-
-    </section><!-- /Doctors Section -->
-
+        
+     
+     
+  </section><!-- /Starter Section Section -->
 
   </main>
 
@@ -234,11 +202,11 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">TakeYourCare</span>
+            <span class="sitename">Medilab</span>
           </a>
           <div class="footer-contact pt-3">
             <p>A108 Adam Street</p>
-            <p>Jalgaon, NY 535022</p>
+            <p>New York, NY 535022</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
             <p><strong>Email:</strong> <span>info@example.com</span></p>
           </div>
@@ -298,13 +266,9 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">TakeYourCare</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href=" ">SSBT's Students</a>
       </div>
     </div>
 

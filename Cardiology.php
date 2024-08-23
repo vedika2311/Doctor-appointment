@@ -4,13 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Medilab Bootstrap Template</title>
+  <title>Cardiology</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -28,13 +26,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Medilab
-  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="starter-page-page">
@@ -60,8 +51,7 @@
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
+          
           <h1 class="sitename">TakeYourCare</h1>
         </a>
 
@@ -69,7 +59,6 @@
           <ul>
             <li><a href="#hero">Home<br></a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#departments">Departments</a></li>
             <li><a href="#doctors">Doctors</a></li>
             
@@ -77,9 +66,6 @@
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
-
       </div>
 
     </div>
@@ -90,12 +76,12 @@
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
-      
+
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li><a href="index.php">Home</a></li>
+            <li class="current">Cardiology</li>
           </ol>
         </div>
       </nav>
@@ -109,116 +95,112 @@
         <div class="row gy-4 gx-5">
 
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\img 4.jpg" style="width:500px">
+            <img src="assets\img\img 1.jpg" style="width:500px">
           
           </div>
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <h3>Eye Care</h3>
+            <h3>Cardiology </h3>
             <p>
-              If you have diabetes or high blood pressure, ask your doctor how often you need an eye exam. 
-              Most people with diabetes or high blood pressure need a dilated eye exam every year.
-             Although older adults tend to have more vision problems, preschoolers may not see as well as they can. 
-             The US Preventive Services Task Force recommends that children have at least one eye exam between age 
-             3 and 5 years. 
+              Cardiology is the study and treatment of disorders of the heart and the blood vessels. 
+              A person with heart disease or cardiovascular disease may be referred to a cardiologist.
+              Cardiology is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. 
+               A cardiac surgeon opens the chest and performs heart surgery.
+              A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. 
             </p>
             
       </div>
 
-    </section><!-- /About Section -->
-
-    <!-- Starter Section Section -->
+    </section>
+       <!-- Starter Section Section -->
     <section id="doctors" class="doctors section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Our Doctors</h2>
-        </div><!-- End Section Title -->
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>Our Doctors</h2>
+</div><!-- End Section Title -->
 
-      <div class="container">
+<div class="container">
 
-        <div class="row gy-4">
+  <div class="row gy-4">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\doctors\doctors-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Rajesh Patil</h4>
-                <span>Chief Medical Officer</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\rajesh-patil.html">
-                    <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-   
-                <button >Book Appointment</button>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Priti Wagh</h4>
-                <span>Anesthesiologist</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\priti-wagh.html">
-                <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-               <button>Book Appointment</button>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\doctors\doctors-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sushil Tiwari</h4>
-                <span>Cardiology</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\sushil-tiwari.html">
-                <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-   
-                <button>Book Appointment</button>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Hp\Desktop\Doctor-appointment\assets\img\doctors\doctors-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sushmita More</h4>
-                <span>Neurosurgeon</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\sushmita-more.html">
-                <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-                <button>Book Appointment</button>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="team-member d-flex align-items-start">
+        <div class="pic"><img src="assets\img\doctors\doctors-1.jpg" class="img-fluid" alt=""></div>
+        <div class="member-info">
+          <h4>Rajesh Patil</h4>
+          <span>Chief Medical Officer</span>
+          <p>Qualification:</p>
+          <p>MBBS, MBSC</p><br>
+          <a href="rajesh-patil.php">
+          <button>Read More</button>
+          </a>
+          <a href="login and register\index.html">
+          <button>Book Appointment</button>
+          </a>
         </div>
-
       </div>
+    </div><!-- End Team Member -->
 
-    </section><!-- /Doctors Section -->
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+      <div class="team-member d-flex align-items-start">
+        <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+        <div class="member-info">
+          <h4>Priti Wagh</h4>
+          <span>Anesthesiologist</span>
+          <p>Qualification:</p>
+          <p>MBBS, MBSC</p><br>
+          <a href="priti-wagh.php">
+          <button>Read More</button>
+          </a>
+          <a href="login and register\index.html">
+          <button>Book Appointment</button>
+          </a>
+        </div>
+      </div>
+    </div><!-- End Team Member -->
 
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="team-member d-flex align-items-start">
+        <div class="pic"><img src="assets\img\doctors\doctors-3.jpg" class="img-fluid" alt=""></div>
+        <div class="member-info">
+          <h4>Sushil Tiwari</h4>
+          <span>Cardiology</span>
+          <p>Qualification:</p>
+          <p>MBBS, MBSC</p><br>
+          <a href="sushil-tiwari.php">
+          <button>Read More</button>
+          </a>
+          <a href="login and register\index.html">
+          <button>Book Appointment</button>
+          </a>
+        </div>
+      </div>
+    </div><!-- End Team Member -->
+
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+      <div class="team-member d-flex align-items-start">
+        <div class="pic"><img src="assets\img\doctors\doctors-4.jpg" class="img-fluid" alt=""></div>
+        <div class="member-info">
+          <h4>Sushmita More</h4>
+          <span>Neurosurgeon</span>
+          <p>Qualification:</p>
+          <p>MBBS, MBSC</p><br>
+          <a href="sushmita-more.php">
+          <button>Read More</button>
+          </a>
+          <a href="login and register\index.html">
+          <button>Book Appointment</button>
+          </a>
+        </div>
+      </div>
+    </div><!-- End Team Member -->
+
+  </div>
+
+</div>
+
+</section><!-- /Doctors Section -->
 
   </main>
 
@@ -232,7 +214,7 @@
           </a>
           <div class="footer-contact pt-3">
             <p>A108 Adam Street</p>
-            <p>Jalgaon, NY 535022</p>
+            <p>Jalgaon 535022</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
             <p><strong>Email:</strong> <span>info@example.com</span></p>
           </div>
@@ -294,11 +276,7 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">TakeYourCare</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href=" ">SSBT's Students</a>
       </div>
     </div>
 

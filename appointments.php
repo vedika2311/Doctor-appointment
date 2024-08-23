@@ -4,11 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Medilab Bootstrap Template</title>
+  <title>Appointments</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-
-  
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -26,14 +24,17 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Medilab
-  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
+<?php
+
+$con = mysqli_connect("localhost","root","","doctor_appointment");
+
+if(!$con){
+    die("Connection Errror");
+}
+$query = "select * from appointment";
+$result = mysqli_query($con,$query);
+?>
 
 <body class="starter-page-page">
 
@@ -70,7 +71,23 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#departments">Departments</a></li>
             <li><a href="#doctors">Doctors</a></li>
-            
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -88,130 +105,73 @@
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
-
-      <nav class="breadcrumbs">
+       <nav class="breadcrumbs">
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li class="current">Appointments</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-     <!-- About Section -->
-     <section id="about" class="about section">
+    <!-- Starter Section Section -->
+    <section id="starter-section" class="starter-section section">
 
-      <div class="container">
-
-        <div class="row gy-4 gx-5">
-
-          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\img 1.jpg" style="width:500px">
-          
-          </div>
-
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <h3>Cardiology </h3>
-            <p>
-              Cardiology is the study and treatment of disorders of the heart and the blood vessels. 
-              A person with heart disease or cardiovascular disease may be referred to a cardiologist.
-              Cardiology is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. 
-               A cardiac surgeon opens the chest and performs heart surgery.
-              A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. 
-            </p>
-            
-      </div>
-
-    </section>
-    <section id="doctors" class="doctors section">
-
-      
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Doctors</h2>
+        <h2>Your Appointments</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up">
+      <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        th, td {
+          padding: 8px;
+          text-align: left;
+          border: 1px solid #ddd;
+        }
+        th{
+          font-size : 18px;
+        }
+        
+        tr:nth-child(even){
+          background-color: #f0f0f0;
+
+        }
+      </style> 
+
+        <table >
+          <tr>
+            <th>Apt. No.</th>
+            <th>Apt. Date</th>
+            <th>Apt. Time</th>
+            <th>Status</th>
+            
+          </tr>
+        
+            <?php
+
+            while($row = mysqli_fetch_assoc($result)){
+              ?>
+              <td><?php echo $row['apt_no']?></td>
+              <td><?php echo $row['apt_date']?></td>
+              <td><?php echo $row['time']?></td>
+              <td><?php echo $row['status']?></td>
+
+            </tr>
+            <?php
+            }
+            ?>
+          </tr>
+        </table>
+       
       </div>
 
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\doctors\doctors-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Rajesh Patil</h4>
-                <span>Chief Medical Officer</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\rajesh-patil.html">
-                <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-                <button>Book Appointment</button>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Priti Wagh</h4>
-                <span>Anesthesiologist</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\rajesh-patil.html">
-                <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-                <button>Book Appointment</button>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\doctors\doctors-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sushil Tiwari</h4>
-                <span>Cardiology</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\sushil-tiwari.html">
-                 <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-                <button>Book Appointment</button>
-            </a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sushmita More</h4>
-                <span>Neurosurgeon</span>
-                <p>Qualification:</p>
-                <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\sushmita-more.html">
-                <button>Read More</button>
-                </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-                <button>Book Appointment</button>
-              </a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Doctors Section -->
-
+    </section><!-- /Starter Section Section -->
 
   </main>
 
@@ -225,7 +185,7 @@
           </a>
           <div class="footer-contact pt-3">
             <p>A108 Adam Street</p>
-            <p>Jalgaon 535022</p>
+            <p>New York, NY 535022</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
             <p><strong>Email:</strong> <span>info@example.com</span></p>
           </div>
@@ -287,11 +247,7 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">TakeYourCare</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href=" ">SSBT's Students</a>
       </div>
     </div>
 

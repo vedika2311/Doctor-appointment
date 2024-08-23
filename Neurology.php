@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Appointments</title>
+  <title>Neurology</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -22,19 +22,9 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
+  <link rel="stylesheet" href="assets/css/main.css">
   <link href="assets/css/main.css" rel="stylesheet">
-
 </head>
-<?php
-
-$con = mysqli_connect("localhost","root","","doc_apo");
-
-if(!$con){
-    die("Connection Errror");
-}
-$query = "select * from users";
-$result = mysqli_query($con,$query);
-?>
 
 <body class="starter-page-page">
 
@@ -105,49 +95,131 @@ $result = mysqli_query($con,$query);
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
-       <nav class="breadcrumbs">
+      <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li><a href="index.php">Home</a></li>
+            <li class="current">Neurology</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
+     <!-- About Section -->
+     <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4 gx-5">
+
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets\img\img 2.jpg" style="width:500px">
+          
+          </div>
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>Neurology</h3>
+            <p>
+              Neurology is the branch of medicine dealing with the diagnosis and treatment
+               of all categories of conditions and disease involving the nervous system, which
+                comprises the brain, the spinal cord and the peripheral nerves. Neurological
+             practice relies heavily on the field of neuroscience, the scientific study of the nervous system.  
+            </p>
+            
+      </div>
+
+    </section><!-- /About Section -->
+
     <!-- Starter Section Section -->
-    <section id="starter-section" class="starter-section section">
+    <section id="doctors" class="doctors section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Your Appointments</h2>
+        <h2>Our Doctors</h2>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up">
-        <table>
-          <tr>
-            <td>Apt. No.</td>
-            <td>Apt. Date</td>
-            <td>Apt. Time</td>
-            <td>Status</td>
-            
-          </tr>
-          <tr>
-            <?php
+      <div class="container">
 
-            while($row = mysqli_fetch_assoc($result)){
-              ?>
-              <td><?php echo $row['apt_no']?></td>
+        <div class="row gy-4">
 
-            </tr>
-            <?php
-            }
-            ?>
-          </tr>
-        </table>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets\img\doctors\doctors-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Rajesh Patil</h4>
+                <span>Chief Medical Officer</span>
+                <p>Qualification:</p>
+                <p>MBBS, MBSC</p><br>
+                <a href="rajesh-patil.php">
+                <button>Read More</button>
+                </a>
+                <a href="login and register\index.html">
+                <button>Book Appointment</button>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Priti Wagh</h4>
+                <span>Anesthesiologist</span>
+                <p>Qualification:</p>
+                <p>MBBS, MBSC</p><br>
+                <a href="priti-wagh.php">
+                <button>Read More</button>
+                </a>
+                <a href="login and register\index.html">
+                <button>Book Appointment</button>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets\img\doctors\doctors-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sushil Tiwari</h4>
+                <span>Cardiology</span>
+                <p>Qualification:</p>
+                <p>MBBS, MBSC</p><br>
+                <a href="sushil-tiwari.php">
+                <button>Read More</button>
+                </a>
+                <a href="login and register\index.html">
+                <button>Book Appointment</button>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets\img\doctors\doctors-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sushmita More</h4>
+                <span>Neurosurgeon</span>
+                <p>Qualification:</p>
+                <p>MBBS, MBSC</p><br>
+                <a href="sushmita-more.php">
+                <button>Read More</button>
+                </a>
+                <a href="login and register\index.html">
+                <button>Book Appointment</button>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
       </div>
 
-    </section><!-- /Starter Section Section -->
+    </section><!-- /Doctors Section -->
+
 
   </main>
 
@@ -223,11 +295,7 @@ $result = mysqli_query($con,$query);
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">TakeYourCare</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href=" ">SSBT's Students</a>
       </div>
     </div>
 
