@@ -25,6 +25,16 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
+<?php
+
+$con = mysqli_connect("localhost","root","","doctor_appointment");
+
+if(!$con){
+    die("Connection Errror");
+}
+$query = "select * from appointment";
+$result = mysqli_query($con,$query);
+?>
 
 <body class="starter-page-page">
 
@@ -99,7 +109,7 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li class="current">Appointments</li>
           </ol>
         </div>
       </nav>
@@ -114,7 +124,51 @@
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up">
+      <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        th, td {
+          padding: 8px;
+          text-align: left;
+          border: 1px solid #ddd;
+        }
+        th{
+          font-size : 18px;
+        }
         
+        tr:nth-child(even){
+          background-color: #f0f0f0;
+
+        }
+      </style> 
+
+        <table >
+          <tr>
+            <th>Apt. No.</th>
+            <th>Apt. Date</th>
+            <th>Apt. Time</th>
+            <th>Status</th>
+            
+          </tr>
+        
+            <?php
+
+            while($row = mysqli_fetch_assoc($result)){
+              ?>
+              <td><?php echo $row['apt_no']?></td>
+              <td><?php echo $row['apt_date']?></td>
+              <td><?php echo $row['time']?></td>
+              <td><?php echo $row['status']?></td>
+
+            </tr>
+            <?php
+            }
+            ?>
+          </tr>
+        </table>
+       
       </div>
 
     </section><!-- /Starter Section Section -->
