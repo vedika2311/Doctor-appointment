@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - TakeYourCare Bootstrap Template</title>
+  <title>Doctor Details</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -26,16 +26,9 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link rel="stylesheet" href="assets/css/main.css">
-    
-  <!-- =======================================================
-  * Template Name: TakeYourCare
-  * Template URL: https://bootstrapmade.com/TakeYourCare-free-medical-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  </head>
 
 <body class="starter-page-page">
 
@@ -69,33 +62,13 @@
           <ul>
             <li><a href="#hero">Home<br></a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#departments">Departments</a></li>
             <li><a href="#doctors">Doctors</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
+            
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
-
       </div>
 
     </div>
@@ -106,139 +79,120 @@
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Starter Page</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li class="current">Find Doctor</li>
+            <li class="current">Dr. Rajesh Patil</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-     <!-- About Section -->
-     <section id="about" class="about section">
-
+    <!-- Starter Section Section -->
+    <section id="about" class="about section">  
       <div class="container">
 
         <div class="row gy-4 gx-5">
 
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="C:\Users\Dell\Desktop\doctor appoinment\assets\img\img 1.jpg" style="width:500px">
-          
-          </div>
+            <img src="assets/img/doctors/doctors-1.jpg" style="width: 500px;">
+         </div>
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <h3>Cardiology </h3>
-            <p>
-              Cardiology is the study and treatment of disorders of the heart and the blood vessels. 
-              A person with heart disease or cardiovascular disease may be referred to a cardiologist.
-              Cardiology is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. 
-               A cardiac surgeon opens the chest and performs heart surgery.
-              A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. 
-            </p>
-            
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Starter Section Section -->
-    <section id="doctors" class="doctors section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Doctors</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Medical Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
+            <style>
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 20px 0;
+                }
+                td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+            </style>
+            <div class="det">
+              <h4>Doctor Rajesh Patil</h4>
+              Designation: Neurology Physician and surgen
             </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Anesthesiologist</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
+            <div class="det">
+              <b>Department:</b>   Neurology
+              <b style="padding-left: 155px;">Gender:</b>   Male
             </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Cardiology</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
+            <div class="det">
+              <b>Qualification:</b>   MBBS,MBSC
+              <b style="padding-left: 130px;">Experience:</b> 5+ years in surgon
             </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Neurosurgeon</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
+            <div class="det">
+              <b>Specialization:</b>   Neurology
             </div>
-          </div><!-- End Team Member -->
+            <div class="det">
+              <b>Consulation fees:</b>   950
+            </div>
+            <div class="det" >
+              <b>Timings:</b>
+              <table>
+                <tbody>
+                    <tr>
+                        <td>MONDAY - (SHIFT-1)</td>
+                        <td>10:00 AM TO 01:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>MONDAY - (SHIFT-2)</td>
+                      <td>03:00 PM TO 06:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>TUESDAY - (SHIFT-1)</td>
+                      <td>10:00 AM TO 01:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>TUESDAY - (SHIFT-2)</td>
+                      <td>04:00 PM TO 09:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>WEDNESDAY - (SHIFT-1)</td>
+                      <td>10:00 AM TO 01:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>WEDNESDAY - (SHIFT-2)</td>
+                      <td>04:00 PM TO 10:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>THURSDAY - (SHIFT-1)</td>
+                      <td>09:00 AM TO 12:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>THURSDAY - (SHIFT-2)</td>
+                      <td>03:00 PM TO 07:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>FRIDAY - (SHIFT-1)</td>
+                      <td>11:00 AM TO 02:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>FRIDAY - (SHIFT-2)</td>
+                      <td>05:00 PM TO 09:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>SATURDAY - (SHIFT-1)</td>
+                      <td>10:00 AM TO 01:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+ 
+          </div>
 
         </div>
 
       </div>
-
-    </section><!-- /Doctors Section -->
-
+        
+     
+     
+  </section><!-- /Starter Section Section -->
 
   </main>
 
@@ -252,7 +206,7 @@
           </a>
           <div class="footer-contact pt-3">
             <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
+            <p>Jalgaon, NY 535022</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
             <p><strong>Email:</strong> <span>info@example.com</span></p>
           </div>
@@ -314,11 +268,7 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">TakeYourCare</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href=" ">SSBT's Students</a>
       </div>
     </div>
 

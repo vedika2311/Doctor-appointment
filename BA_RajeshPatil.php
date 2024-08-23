@@ -69,33 +69,13 @@
           <ul>
             <li><a href="#hero">Home<br></a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#departments">Departments</a></li>
             <li><a href="#doctors">Doctors</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
+            
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
-
       </div>
 
     </div>
@@ -106,16 +86,7 @@
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Starter Page</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
@@ -130,11 +101,8 @@
     <!-- Doctors Section -->
     <section id="doctors" class="doctors section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2><a href="#">Login </a> / <a href="#">Register </a> To Book Appointment</h2>
-        
-      </div><!-- End Section Title -->
+          
+  
 
       <div class="container">
 
@@ -171,7 +139,235 @@
 
     </section><!-- /Doctors Section -->
 
-      
+     
+
+
+               <!-- Starter Section Section -->
+    <section id="doctors" class="doctors section">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+    
+              <div class="member-info">
+                <h4>November 04,2024</h4>
+               <br>
+             <h4>09:00 AM -01:00 PM</h4>
+
+               <input class="styled" type="button" onclick="openModal()" value="09:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="09:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="09:40 AM"/>
+               <br><br>
+               <input class="styled" type="button" onclick="openModal()" value="10:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="10:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="10:40 AM"/>
+               <br><br>
+               <input class="styled" type="button" onclick="openModal()" value="11:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="11:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="11:40 AM"/>
+               <br><br>
+               <input class="styled" type="button" onclick="openModal()" value="12:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="12:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="12:40 AM"/>
+              
+              </div>
+            </div>
+          </div>
+          <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h4>Confirmation ?</h4>
+    <form id="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number.." required>
+
+        <div class="modal-buttons">
+            <button type="submit" class="ok-btn">OK</button>
+            <button type="button" class="cancel-btn" onclick="closeModal()">Cancel</button>
+        </div>
+    </form>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// Function to open the modal
+function openModal() {
+  modal.style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+  modal.style.display = "none";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  closeModal();
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+
+// Handle form submission
+document.getElementById("form").onsubmit = function(event) {
+  event.preventDefault();
+  alert("Form submitted!");
+  closeModal();
+}
+</script>
+
+          
+          
+          
+          <!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="member-info">
+                <h4>November 04,2024</h4>
+               <br>
+             <h4>09:00 AM -01:00 PM</h4>
+
+               <input class="styled" type="button" onclick="openModal()" value="09:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()"  value="09:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="09:40 AM"/>
+               <br><br>
+               <input class="styled" type="button" onclick="openModal()" value="10:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="10:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="10:40 AM"/>
+               <br><br>
+               <input class="styled" type="button" onclick="openModal()" value="11:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="11:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="11:40 AM"/>
+               <br><br>
+               <input class="styled" type="button" onclick="openModal()" value="12:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="12:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="12:40 AM"/>
+             
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="member-info">
+                <h4>November 04,2024</h4>
+               <br>
+             <h4>09:00 AM -01:00 PM</h4>
+
+               <input class="styled" type="button" onclick="openModal()" value="09:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="09:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="09:40 AM"/>
+               <br><br>
+               <input class="styled" type="button" onclick="openModal()" value="10:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="10:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="10:40 AM"/>
+               <br><br>
+               <input class="styled" type="button" onclick="openModal()" value="11:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="11:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()"  value="11:40 AM"/>
+               <br><br>
+               <input class="styled" type="button" onclick="openModal()" value="12:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="12:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="12:40 AM"/>
+             
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="member-info">
+                <h4>November 04,2024</h4>
+               <br>
+             <h4>09:00 AM -01:00 PM</h4>
+
+               <input class="styled" type="button" onclick="openModal()" value="09:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="09:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="09:40 AM"/>
+               <br><br>
+               <input class="styled" type="button" onclick="openModal()" value="10:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="10:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()"  value="10:40 AM"/>
+               <br><br>
+               <input class="styled" type="button" onclick="openModal()" value="11:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="11:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()"  value="11:40 AM"/>
+               <br><br>
+               <input class="styled" type="button" onclick="openModal()" value="12:00 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="12:20 AM"/>
+               <input class="styled" type="button" onclick="openModal()" value="12:40 AM"/>
+             
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Doctors Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </main>
 
   <footer id="footer" class="footer light-background">
@@ -249,11 +445,7 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">TakeYourCare</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href=" ">SSBT's Students</a>
       </div>
     </div>
 

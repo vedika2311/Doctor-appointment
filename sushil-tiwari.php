@@ -4,11 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - TakeYourCare Bootstrap Template</title>
+  <title>Doctor Details</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -25,14 +28,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: TakeYourCare
-  * Template URL: https://bootstrapmade.com/TakeYourCare-free-medical-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+  </head>
 
 <body class="starter-page-page">
 
@@ -59,7 +55,7 @@
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">TakeYourCare</h1>
+          <h1 class="sitename">Medilab</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -83,30 +79,120 @@
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
-       <nav class="breadcrumbs">
+      
+      <nav class="breadcrumbs">
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li class="current">Find Doctor</li>
+            <li class="current">Dr. Sushil Tiwari</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
     <!-- Starter Section Section -->
-    <section id="starter-section" class="starter-section section">
+    <section id="about" class="about section">  
+      <div class="container">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p>Medicine cures diseases, but only doctors can cure patients:</p>
-      </div><!-- End Section Title -->
+        <div class="row gy-4 gx-5">
 
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets\img\doctors\doctors-3.jpg" style="width: 500px;">
+         </div>
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <style>
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 20px 0;
+                }
+                td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+            </style>
+            <div class="det">
+              <h4>Doctor Sushil Tiwari</h4>
+              Designation: Cardiology Physician and surgen
+            </div>
+            <div class="det">
+              <b>Department:</b>   Cardiology
+              <b style="padding-left: 155px;">Gender:</b>   Male
+            </div>
+            <div class="det">
+              <b>Qualification:</b>   MBBS,MBSC
+              <b style="padding-left: 130px;">Experience:</b> 5+ years in surgon
+            </div>
+            <div class="det">
+              <b>Specialization:</b>   Cardiology
+            </div>
+            <div class="det">
+              <b>Consulation fees:</b>   950
+            </div>
+            <div class="det" >
+              <b>Timings:</b>
+              <table>
+                <tbody>
+                    <tr>
+                        <td>MONDAY - (SHIFT-1)</td>
+                        <td>10:00 AM TO 01:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>MONDAY - (SHIFT-2)</td>
+                      <td>03:00 PM TO 06:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>TUESDAY - (SHIFT-1)</td>
+                      <td>10:00 AM TO 01:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>TUESDAY - (SHIFT-2)</td>
+                      <td>04:00 PM TO 09:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>WEDNESDAY - (SHIFT-1)</td>
+                      <td>10:00 AM TO 01:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>WEDNESDAY - (SHIFT-2)</td>
+                      <td>04:00 PM TO 10:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>THURSDAY - (SHIFT-1)</td>
+                      <td>09:00 AM TO 12:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>THURSDAY - (SHIFT-2)</td>
+                      <td>03:00 PM TO 07:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>FRIDAY - (SHIFT-1)</td>
+                      <td>11:00 AM TO 02:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>FRIDAY - (SHIFT-2)</td>
+                      <td>05:00 PM TO 09:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>SATURDAY - (SHIFT-1)</td>
+                      <td>10:00 AM TO 01:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+ 
+          </div>
+
+        </div>
+
       </div>
-
-    </section><!-- /Starter Section Section -->
+        
+     
+     
+  </section><!-- /Starter Section Section -->
 
   </main>
 
@@ -116,7 +202,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">TakeYourCare</span>
+            <span class="sitename">Medilab</span>
           </a>
           <div class="footer-contact pt-3">
             <p>A108 Adam Street</p>
@@ -180,7 +266,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">TakeYourCare</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         Designed by <a href=" ">SSBT's Students</a>
       </div>

@@ -4,11 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - TakeYourCare Bootstrap Template</title>
+  <title>Neurology</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -23,15 +22,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
+  <link rel="stylesheet" href="assets/css/main.css">
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: TakeYourCare
-  * Template URL: https://bootstrapmade.com/TakeYourCare-free-medical-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="starter-page-page">
@@ -66,13 +58,33 @@
           <ul>
             <li><a href="#hero">Home<br></a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#departments">Departments</a></li>
             <li><a href="#doctors">Doctors</a></li>
-            
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+
+        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
+
       </div>
 
     </div>
@@ -83,30 +95,131 @@
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
-       <nav class="breadcrumbs">
+      <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li><a href="index.php">Home</a></li>
+            <li class="current">Neurology</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
+     <!-- About Section -->
+     <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4 gx-5">
+
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets\img\img 2.jpg" style="width:500px">
+          
+          </div>
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>Neurology</h3>
+            <p>
+              Neurology is the branch of medicine dealing with the diagnosis and treatment
+               of all categories of conditions and disease involving the nervous system, which
+                comprises the brain, the spinal cord and the peripheral nerves. Neurological
+             practice relies heavily on the field of neuroscience, the scientific study of the nervous system.  
+            </p>
+            
+      </div>
+
+    </section><!-- /About Section -->
+
     <!-- Starter Section Section -->
-    <section id="starter-section" class="starter-section section">
+    <section id="doctors" class="doctors section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p>Medicine cures diseases, but only doctors can cure patients:</p>
+        <h2>Our Doctors</h2>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets\img\doctors\doctors-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Rajesh Patil</h4>
+                <span>Chief Medical Officer</span>
+                <p>Qualification:</p>
+                <p>MBBS, MBSC</p><br>
+                <a href="rajesh-patil.php">
+                <button>Read More</button>
+                </a>
+                <a href="login and register\index.html">
+                <button>Book Appointment</button>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Priti Wagh</h4>
+                <span>Anesthesiologist</span>
+                <p>Qualification:</p>
+                <p>MBBS, MBSC</p><br>
+                <a href="priti-wagh.php">
+                <button>Read More</button>
+                </a>
+                <a href="login and register\index.html">
+                <button>Book Appointment</button>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets\img\doctors\doctors-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sushil Tiwari</h4>
+                <span>Cardiology</span>
+                <p>Qualification:</p>
+                <p>MBBS, MBSC</p><br>
+                <a href="sushil-tiwari.php">
+                <button>Read More</button>
+                </a>
+                <a href="login and register\index.html">
+                <button>Book Appointment</button>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets\img\doctors\doctors-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sushmita More</h4>
+                <span>Neurosurgeon</span>
+                <p>Qualification:</p>
+                <p>MBBS, MBSC</p><br>
+                <a href="sushmita-more.php">
+                <button>Read More</button>
+                </a>
+                <a href="login and register\index.html">
+                <button>Book Appointment</button>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
       </div>
 
-    </section><!-- /Starter Section Section -->
+    </section><!-- /Doctors Section -->
+
 
   </main>
 
