@@ -62,33 +62,13 @@
           <ul>
             <li><a href="#hero">Home<br></a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#departments">Departments</a></li>
             <li><a href="#doctors">Doctors</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
+            
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
-
       </div>
 
     </div>
@@ -105,7 +85,7 @@
           <ol>
             <li><a href="index.html">Home</a></li>
             <li class="current">Find Doctor</li>
-            <li class="current">Dr. Rajesh Patil</li>
+            <li class="current">Dr. Priti Wagh</li>
           </ol>
         </div>
       </nav>
@@ -118,7 +98,7 @@
         <div class="row gy-4 gx-5">
 
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\doctors\doctors-2.jpg" style="width: 500px;">
+            <img src="assets\img\doctors\doctors-2.jpg" style="width: 500px;">
          </div>
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
@@ -288,11 +268,7 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href=" ">SSBT's Students</a>
       </div>
     </div>
 

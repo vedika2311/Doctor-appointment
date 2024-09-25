@@ -55,40 +55,20 @@
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Medilab</h1>
+          <h1 class="sitename">TakeYourCare</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero">Home<br></a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#departments">Departments</a></li>
             <li><a href="#doctors">Doctors</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
+            
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
-
       </div>
 
     </div>
@@ -118,7 +98,7 @@
         <div class="row gy-4 gx-5">
 
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\doctors\doctors-4.jpg" style="width: 500px;">
+            <img src="assets/img/doctors/doctors-1.jpg" style="width: 500px;">
          </div>
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
@@ -135,11 +115,11 @@
                 }
             </style>
             <div class="det">
-              <h4>Doctor Sushmita More</h4>
-              Designation: Homeopathy Physician and surgen
+              <h4>Doctor Rajesh Patil</h4>
+              Designation: Neurology Physician and surgen
             </div>
             <div class="det">
-              <b>Department:</b>  Homeopathy  
+              <b>Department:</b>   Neurology
               <b style="padding-left: 155px;">Gender:</b>   Male
             </div>
             <div class="det">
@@ -147,7 +127,7 @@
               <b style="padding-left: 130px;">Experience:</b> 5+ years in surgon
             </div>
             <div class="det">
-              <b>Specialization:</b>   Homeopathy
+              <b>Specialization:</b>   Neurology
             </div>
             <div class="det">
               <b>Consulation fees:</b>   950
@@ -222,11 +202,11 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Medilab</span>
+            <span class="sitename">TakeYourCare</span>
           </a>
           <div class="footer-contact pt-3">
             <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
+            <p>Jalgaon, NY 535022</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
             <p><strong>Email:</strong> <span>info@example.com</span></p>
           </div>
@@ -286,13 +266,9 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">TakeYourCare</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href=" ">SSBT's Students</a>
       </div>
     </div>
 

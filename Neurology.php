@@ -4,13 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Medilab Bootstrap Template</title>
+  <title>Neurology</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -26,15 +22,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
+  <link rel="stylesheet" href="assets/css/main.css">
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Medilab
-  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="starter-page-page">
@@ -71,7 +60,6 @@
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#departments">Departments</a></li>
-            <li><a href="#doctors">Doctors</a></li>
             
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -90,12 +78,15 @@
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
+<<<<<<< HEAD:Neurology.html
       
+=======
+>>>>>>> a98bf1fe25edc354b3f834fee7ff4b3ca9484e85:Neurology.php
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li><a href="index.php">Home</a></li>
+            <li class="current">Neurology</li>
           </ol>
         </div>
       </nav>
@@ -109,18 +100,17 @@
         <div class="row gy-4 gx-5">
 
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\img 4.jpg" style="width:500px">
+            <img src="assets\img\img 2.jpg" style="width:500px">
           
           </div>
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <h3>Eye Care</h3>
+            <h3>Neurology</h3>
             <p>
-              If you have diabetes or high blood pressure, ask your doctor how often you need an eye exam. 
-              Most people with diabetes or high blood pressure need a dilated eye exam every year.
-             Although older adults tend to have more vision problems, preschoolers may not see as well as they can. 
-             The US Preventive Services Task Force recommends that children have at least one eye exam between age 
-             3 and 5 years. 
+              Neurology is the branch of medicine dealing with the diagnosis and treatment
+               of all categories of conditions and disease involving the nervous system, which
+                comprises the brain, the spinal cord and the peripheral nerves. Neurological
+             practice relies heavily on the field of neuroscience, the scientific study of the nervous system.  
             </p>
             
       </div>
@@ -133,7 +123,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Our Doctors</h2>
-        </div><!-- End Section Title -->
+      </div><!-- End Section Title -->
 
       <div class="container">
 
@@ -141,18 +131,17 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\doctors\doctors-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets\img\doctors\doctors-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Rajesh Patil</h4>
                 <span>Chief Medical Officer</span>
                 <p>Qualification:</p>
                 <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\rajesh-patil.html">
-                    <button>Read More</button>
+                <a href="rajesh-patil.php">
+                <button>Read More</button>
                 </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-   
-                <button >Book Appointment</button>
+                <a href="login and register\index.html">
+                <button>Book Appointment</button>
                 </a>
               </div>
             </div>
@@ -166,11 +155,11 @@
                 <span>Anesthesiologist</span>
                 <p>Qualification:</p>
                 <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\priti-wagh.html">
+                <a href="priti-wagh.php">
                 <button>Read More</button>
                 </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-               <button>Book Appointment</button>
+                <a href="login and register\index.html">
+                <button>Book Appointment</button>
                 </a>
               </div>
             </div>
@@ -178,17 +167,16 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Dell\Desktop\Doctor-appointment\assets\img\doctors\doctors-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets\img\doctors\doctors-3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Sushil Tiwari</h4>
                 <span>Cardiology</span>
                 <p>Qualification:</p>
                 <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\sushil-tiwari.html">
+                <a href="sushil-tiwari.php">
                 <button>Read More</button>
                 </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
-   
+                <a href="login and register\index.html">
                 <button>Book Appointment</button>
                 </a>
               </div>
@@ -197,16 +185,16 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="C:\Users\Hp\Desktop\Doctor-appointment\assets\img\doctors\doctors-4.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets\img\doctors\doctors-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Sushmita More</h4>
                 <span>Neurosurgeon</span>
                 <p>Qualification:</p>
                 <p>MBBS, MBSC</p><br>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\sushmita-more.html">
+                <a href="sushmita-more.php">
                 <button>Read More</button>
                 </a>
-                <a href="C:\Users\Dell\Desktop\Doctor-appointment\login and register\index.html">
+                <a href="login and register\index.html">
                 <button>Book Appointment</button>
                 </a>
               </div>
@@ -294,11 +282,7 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">TakeYourCare</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href=" ">SSBT's Students</a>
       </div>
     </div>
 
