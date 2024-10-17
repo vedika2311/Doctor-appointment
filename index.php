@@ -352,7 +352,7 @@
           <a href="rajesh-patil.php">
           <button>Read More</button>
           </a>
-          <a href="login and register\index.html">
+          <a href="login and register\index.php">
           <button>Book Appointment</button>
           </a>
         </div>
@@ -370,7 +370,7 @@
           <a href="priti-wagh.php">
           <button>Read More</button>
           </a>
-          <a href="login and register\index.html">
+          <a href="login and register\index.php">
           <button>Book Appointment</button>
           </a>
         </div>
@@ -388,7 +388,7 @@
           <a href="sushil-tiwari.php">
           <button>Read More</button>
           </a>
-          <a href="login and register\index.html">
+          <a href="login and register\index.php">
           <button>Book Appointment</button>
           </a>
         </div>
@@ -406,7 +406,7 @@
           <a href="sushmita-more.php">
           <button>Read More</button>
           </a>
-          <a href="login and register\index.html">
+          <a href="login and register\index.php">
           <button>Book Appointment</button>
           </a>
         </div>
